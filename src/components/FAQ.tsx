@@ -1,0 +1,2 @@
+import { faq } from "@/data/faq";
+export function FAQ() { return <section id="faq" className="faq-section wrap"><div><p className="eyebrow">BRA ATT VETA</p><h2>Frågetecken?<br />Vi reder ut dem.</h2><p>Monstret är snällt. Fråga på.</p></div><div className="faq-list">{faq.map(([question, answer]) => <details key={question} name="faq"><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div></section>; }
